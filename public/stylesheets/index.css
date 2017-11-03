@@ -35,6 +35,12 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
+/*header styling*/
+header {
+  background-color: #c2b180;
+  border: 6px solid #c2b180;
+}
+
 @media screen and (max-width: 480px) {
     /* change header to burger menu on smaller screens */
   .burger {
