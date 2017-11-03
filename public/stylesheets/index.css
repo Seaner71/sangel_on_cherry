@@ -11,7 +11,7 @@ ul.nav-desk {
   background-color: #c2b180;
   position: fixed;
   width: 100vw;
-  top: 0;
+  top: 316px;
   left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
