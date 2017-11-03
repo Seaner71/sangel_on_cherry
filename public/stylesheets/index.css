@@ -38,7 +38,6 @@ li a:hover:not(.active) {
 /*header styling*/
 header {
   background-color: #c2b180;
-  border: 6px solid #c2b180;
 }
 
 @media screen and (max-width: 480px) {
