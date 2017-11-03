@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* NAV BAR STYLING */
@@ -38,6 +39,7 @@ li a:hover:not(.active) {
 /*header styling*/
 header {
   background-color: #c2b180;
+
 }
 
 
@@ -47,8 +49,14 @@ footer {
   left: 0;
   background: #c2b180;
   width: 100vw;
-  font-family: 'Great Vibes', cursive;
+  color: #54331d;
 }
+
+.name{
+    font-family: 'Great Vibes', cursive;
+}
+
+
 
 @media screen and (max-width: 480px) {
     /* change header to burger menu on smaller screens */
