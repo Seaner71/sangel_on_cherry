@@ -37,5 +37,6 @@ li a:hover:not(.active) {
 
 /*header styling*/
 header {
-  background-color: #c2b180
+  background-color: #c2b180;
+  border: solid #c2b180;
 }
