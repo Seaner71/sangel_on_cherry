@@ -1,3 +1,36 @@
 * {
   box-sizing: border-box;
 }
+
+/* NAV BAR STYLING */
+ul.nav-desk {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c2b180;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0.3sem;
+  grid-auto-columns: minmax(100px, auto);
+}
+.nav-desk a {
+  display: block;
+  color: #54331d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #99864e;
+  color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+}
