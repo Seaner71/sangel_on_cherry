@@ -2,10 +2,19 @@
   box-sizing: border-box;
 
 }
-body {
+html, body {
   margin: 0 auto;
+  padding: 0;
+  height: 100%;
 }
 
+#wrapper {
+	min-height:100%;
+	position: relative;
+}
+#content {
+  padding-bottom: 140px;
+}
 /* NAV BAR STYLING */
 ul.nav-desk {
   list-style-type: none;
@@ -49,17 +58,25 @@ header {
 
 /*footer styling*/
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
+  height: 120px;
+  width: 100%;
   background: #c2b180;
-  width: 100vw;
   color: #54331d;
   text-align: center;
 }
 
+
 .name{
     font-family: 'Great Vibes', cursive;
+}
+
+/*Contact page styling*/
+
+input, textarea {
+  display: block;
 }
 
 
