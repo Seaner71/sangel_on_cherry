@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+
+}
+body {
+  margin: 0 auto;
 }
 
 /* NAV BAR STYLING */
@@ -9,14 +13,13 @@ ul.nav-desk {
   padding: 0;
   overflow: hidden;
   background-color: #c2b180;
-  position: fixed;
+  position: relative;
   width: 100vw;
-  top: 316px;
-  left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 0.3sem;
   grid-auto-columns: minmax(100px, auto);
+  border: 2px solid #54331d;
 }
 .nav-desk a {
   display: block;
@@ -38,17 +41,28 @@ li a:hover:not(.active) {
 /*header styling*/
 header {
   background-color: #c2b180;
+
 }
+ img {
+   max-width: 100%;
+ }
 
-
+/*footer styling*/
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   background: #c2b180;
   width: 100vw;
-  font-family: 'Great Vibes', cursive;
+  color: #54331d;
+  text-align: center;
 }
+
+.name{
+    font-family: 'Great Vibes', cursive;
+}
+
+
 
 @media screen and (max-width: 480px) {
     /* change header to burger menu on smaller screens */
@@ -63,16 +77,14 @@ footer {
     background-color: #c2b180;
     position: relative;
     width: 100vw;
-    /*top: 316px;
-    left: 0;*/
-  }
+}
   .burger>span {
     display: block;
     background-color: #54331d;
     width: 50px;
     height: 0.5em;
     border-radius: 5px;
-  }
+}
   .burger>span:nth-child(2) {
     margin: 4px 0;
   }
