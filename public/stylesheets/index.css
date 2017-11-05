@@ -139,10 +139,7 @@ h1 {
       width: 60%;
       padding: 10px;
       grid-template-columns: 105%;
-      /*
-      grid-column-gap:1em;
-      grid-row-gap:1em;
-      */
+      grid-row-gap:1em
       grid-gap:1em;
     }
 
@@ -152,7 +149,7 @@ h1 {
     }
     .wrapper > div:nth-child(odd){
       background:#;
-    }
+    }*/
 
 @media screen and (max-width: 480px) {
     /* change header to burger menu on smaller screens */
