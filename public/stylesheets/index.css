@@ -91,6 +91,26 @@ input, textarea {
   padding-left: 30px;
 }
 
+#submit {
+  background: #c2b180;
+  color: #54331d;
+  margin-top: 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  height: 2em;
+}
+
+/* MEDIA QUERY SECTION */
+@media screen and (max-width: 1000px) {
+    /* change contact page to one column at 1000px width */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 0.3em;
+}
+.directions {
+  padding-left: 30px;
+}
 
 @media screen and (max-width: 480px) {
     /* change header to burger menu on smaller screens */
