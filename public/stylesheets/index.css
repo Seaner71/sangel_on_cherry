@@ -75,10 +75,21 @@ footer {
 
 /*Contact page styling*/
 
-input, textarea {
-  display: block;
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0.3em;
+
 }
 
+input, textarea {
+  display: block;
+
+}
+
+.reservation {
+  padding-left: 30px;
+}
 
 
 @media screen and (max-width: 480px) {
