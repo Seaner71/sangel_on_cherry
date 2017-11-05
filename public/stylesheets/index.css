@@ -101,7 +101,7 @@ input, textarea {
 }
 
 /* MEDIA QUERY SECTION */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     /* change contact page to one column at 1000px width */
 .contact-wrapper {
   display: grid;
@@ -110,6 +110,13 @@ input, textarea {
 }
 .directions {
   padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+iframe {
+  width: 400px;
+  height: 300px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -139,3 +146,8 @@ input, textarea {
   ul.nav-desk {
     display: none;
   }
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
