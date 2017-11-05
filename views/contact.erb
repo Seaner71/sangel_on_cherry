@@ -23,7 +23,36 @@
 </div>
 <div class="directions">
   <h1>Directions</h1>
-  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDZ_LpeFnEQX9r6XxUP75z3L1I4aDZV9nc
-       &q=1601+Cherry+Street+Philadelphia+PA&"></iframe>
+  <div id="map">
+
+  </div>
+  <script>
+  function initMap() {
+    var sangelOnCherry = {lat: 39.955944, lng: -75.166917};
+    var options  = {
+      zoom: 14,
+      center: sangelOnCherry
+    }
+    var map = new google.maps.Map(document.getElementById('map'), options);
+    var marker = new google.maps.Marker({
+      position: sangelOnCherry,
+      map: map,
+      icon: 'http://maps.gstatic.com/mapfiles/ms2/micons/restaurant.png'
+    });
+    var infoWindow = new google.maps.InfoWindow({
+      content: '<p id="greet"> Welcome to Sangel on Cherry</p>'
+    });
+
+    marker.addListener('click', function() {
+      infoWindow.open(map, marker);
+    });
+
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ_LpeFnEQX9r6XxUP75z3L1I4aDZV9nc&callback=initMap">
+</script>
+  <!-- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDZ_LpeFnEQX9r6XxUP75z3L1I4aDZV9nc
+       &q=1601+Cherry+Street+Philadelphia+PA&"></iframe> -->
 </div>
 </div>
