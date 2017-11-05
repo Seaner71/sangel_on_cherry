@@ -140,7 +140,6 @@ h1, h3 {
       padding: 10px;
       grid-template-columns: 105%;
       grid-row-gap:1em
-      grid-gap:1em;
     }
 
     .wrapper > div{
@@ -149,7 +148,7 @@ h1, h3 {
     }
     .wrapper > div:nth-child(odd){
       background:#;
-    }*/
+    }
 
 @media screen and (max-width: 480px) {
     /* change header to burger menu on smaller screens */
