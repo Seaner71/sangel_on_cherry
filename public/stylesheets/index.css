@@ -1,7 +1,20 @@
 * {
   box-sizing: border-box;
+
+}
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
 }
 
+#wrapper {
+	min-height:100%;
+	position: relative;
+}
+#content {
+  padding-bottom: 140px;
+}
 /* NAV BAR STYLING */
 ul.nav-desk {
   list-style-type: none;
@@ -9,14 +22,13 @@ ul.nav-desk {
   padding: 0;
   overflow: hidden;
   background-color: #c2b180;
-  position: fixed;
+  position: relative;
   width: 100vw;
-  top: 316px;
-  left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 0.3sem;
   grid-auto-columns: minmax(100px, auto);
+  border: 2px solid #54331d;
 }
 .nav-desk a {
   display: block;
@@ -38,6 +50,73 @@ li a:hover:not(.active) {
 /*header styling*/
 header {
   background-color: #c2b180;
+
+}
+ img {
+   max-width: 100%;
+ }
+
+/*footer styling*/
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  background: #c2b180;
+  color: #54331d;
+  text-align: center;
+}
+
+
+.name{
+    font-family: 'Great Vibes', cursive;
+}
+
+/*Contact page styling*/
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0.3em;
+
+}
+
+input, textarea {
+  display: block;
+
+}
+
+.reservation {
+  padding-left: 30px;
+}
+
+#submit {
+  background: #c2b180;
+  color: #54331d;
+  margin-top: 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  height: 2em;
+}
+
+/* MEDIA QUERY SECTION */
+@media screen and (max-width: 1024px) {
+    /* change contact page to one column at 1000px width */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 0.3em;
+}
+.directions {
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+iframe {
+  width: 400px;
+  height: 300px;
+  }
 }
 
 /*Menu styling*/
@@ -86,21 +165,24 @@ h1 {
     padding: 0;
     overflow: hidden;
     background-color: #c2b180;
-    position: fixed;
+    position: relative;
     width: 100vw;
-    top: 316px;
-    left: 0;
-  }
+}
   .burger>span {
     display: block;
     background-color: #54331d;
     width: 50px;
     height: 0.5em;
     border-radius: 5px;
-  }
+}
   .burger>span:nth-child(2) {
     margin: 4px 0;
   }
   ul.nav-desk {
     display: none;
   }
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
