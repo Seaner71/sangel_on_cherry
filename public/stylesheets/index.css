@@ -13,7 +13,7 @@ html, body {
 	position: relative;
 }
 #content {
-  padding-bottom: 140px;
+  padding-bottom: 160px;
 }
 /* NAV BAR STYLING */
 ul.nav-desk {
@@ -61,16 +61,19 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 120px;
+  height: 140px;
   width: 100%;
   background: #c2b180;
   color: #54331d;
   text-align: center;
+
 }
 
 
 .name{
     font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /*Contact page styling*/
