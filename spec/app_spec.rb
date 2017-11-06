@@ -15,6 +15,6 @@ describe 'App' do
   it "says hello" do
     get '/'
     expect(last_response).to be_ok
-    expect(last_response.body).to include('Hello World')
+    expect(last_response.body).to include('Sangel')
   end
 end
