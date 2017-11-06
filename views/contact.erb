@@ -1,7 +1,7 @@
 <div class="contact-wrapper">
 <div class="reservation">
   <h1>Make A Reservation</h1>
-  <form>
+  <form action='/contact' method="post">
     <label for="fname">First Name</label>
     <input type="text" name="fname">
     <label for="lname">Last Name</label>
@@ -18,8 +18,9 @@
     <input type="number" min='1' max ='20'>
     <label for="comments">Special Requests</label>
     <textarea name="comments" cols="50" rows="5"></textarea>
-    <button id ='submit' type="button" name ='Submit'>Submit</button>
+    <input id ='submit' type="button" name='Submit' value="Submit">
   </form>
+
 </div>
 <div class="directions">
   <h1>Directions</h1>
