@@ -124,24 +124,23 @@ h1, h3 {
       grid-gap:1em;
     }
 
-
 .wrapper{
       margin: auto;
       display:grid;
       width: 60%;
       padding: 10px;
       grid-template-columns: 105%;
-      grid-row-gap:1em
+      grid-row-gap:1em;
       grid-gap:1em;
     }
 
-    .wrapper > div{
+.wrapper > div{
       background:#fff;
       padding: 1em;
-    }
-    .wrapper > div:nth-child(odd){
-      background:#;
-    }
+}
+.wrapper > div:nth-child(odd){
+    background:#c2b190;
+  }
 
 /* MEDIA QUERY SECTION */
 @media screen and (max-width: 1024px) {
