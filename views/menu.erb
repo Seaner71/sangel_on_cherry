@@ -1,19 +1,50 @@
+<script>
+
+// Some code borrowed with love from Traversy Media: https://youtu.be/4YQ4svkETS0
+
+  var i = 0;
+  var images = [];
+  var time = 2000;
+
+  images[0] = 'img/food-eating-potatoes-beer-8313.jpg';
+  images[1] = 'img/pexels-photo-461198.jpeg';
+  images[2] = 'img/pexels-photo-209540.jpeg';
+
+  function changeImg() {
+    document.slide.src = images[i];
+
+    if (i < images.length - 1) {
+      i++;
+    } else {
+      i = 0;
+    }
+
+    setTimeout("changeImg()", time);
+
+  }
+  window.onload = changeImg;
+</script>
+
 <body>
+  <img class="img1" name="slide" width="1000" height="800"/>
+
   <h1>Menu</h1>
-  <h3> Lunch and Dinner </h3>
+
+  <h3>Lunch and Dinner</h3>
   <div class="wrapper">
     <div class="nested">
       <div>Lorem Soup</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
-      <div>Lorem</div>
-      <div>Lorem</div>
-      <div>Lorem</div>
-      <div>Lorem</div>
-      <div>Lorem</div>
-      <div>Lorem</div>
-      <div>Lorem</div>
-      <div>Lorem</div>
-      <div>Lorem</div>
-      <div>Lorem</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.div</div>
+      <div>Ipsum Sandwich</div>
+      <div>Neque temporibus, perferendis excepturi molestiae in, vel perspiciatis ducimus.</div>
+      <div>Dolor Salad</div>
+      <div>Blah blah blah blah blah blah blah blah blah</div>
+      <div>Div Wrap</div>
+      <div>Yum!</div>
+      <div>Wrapper Wrap</div>
+      <div>It's a pun</div>
+      <div>JavaScript Moca Latte</div>
+      <div>Save the best for last</div>
     </div>
-    </body>
+  </div>
+</body>
