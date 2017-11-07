@@ -18,7 +18,7 @@ end
 post '/contact' do
   # binding.pry
   from = Email.new(email: 'test@example.com')
-  to = Email.new(email: 'ssmyth1071@gmail.com')
+  to = Email.new(email: 'test@example.com')
   subject = 'Sending with SendGrid is Fun'
   content = Content.new(type: 'text/plain', value: 'and easy to do anywhere, even with Ruby')
   mail = Mail.new(from, subject, to, content)
